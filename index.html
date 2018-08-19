@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multi-Purpose Landing Page</title>
+	<meta name="description" content="sigle page template" />
+	<meta name="keywords" content="template, html, css, menu, responsive, mobile-friendly" />
+    <!-- insert icon here -->
+	<link rel="shortcut icon" href="">
+    <!-- jquery -->
+    <script src="lib/jquery/jquery.min.js"></script>  
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,700,900" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="header">
+        
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-static-top navbar-light">
+            <a class="navbar-brand" href="#">Design</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OUR TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">REVIEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- header content -->
+        <div class="row header-content">
+            <div class="header-text col-sm-12 col-lg-5 col-xl-5">
+                <div class="header-text-content">
+                    <h1>clean. <span class="yellow">yellow.</span> pixel perfect.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                    <button class="btn-header btn-dark-header">contact us</button>
+                    <button class="btn-header btn-light-header">about us</button>
+                </div>
+            </div>
+            <div class="header-img col-sm-12 col-lg-7 col-xl-7">
+                
+            </div>
+        </div>
+    </div> <!-- end header & nav --> 
+    
+    <div id="portfolio">
+        
+        <!-- portfolio header -->
+        <div class="portfolio-header">
+            <h1 class="h-title">OUR LATEST PROJECTS</h1>
+            <p class="p-content">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div class="yellow-line"> </div>
+        </div>
+        
+        <!-- portfolio grid -->
+        <div class="portfolio-grid">
+            <!-- control buttons -->
+            <div id="btn-container">
+              <button class="btn-light btn-portfolio active-btn" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn-light btn-portfolio" onclick="filterSelection('design')"> Design</button>
+              <button class="btn-light btn-portfolio" onclick="filterSelection('dev')"> Dev</button>
+              <button class="btn-light btn-portfolio" onclick="filterSelection('other')"> Other</button>
+            </div>
+            
+            <!-- portfolio container -->
+            <div class="container portfolio-container">
+                <div class="row first-row">
+                    <div class="col-sm-12 col-lg-4 col-xl-4 filterDiv design">
+                        <div class="yellow-overlay">
+                            <div class="sub-overlay">
+                                <h1>BLOCK TITLE</h1>
+                                <p>Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 col-xl-4 filterDiv dev other">
+                        <div class="yellow-overlay">
+                            <div class="sub-overlay">
+                                <h1>BLOCK TITLE</h1>
+                                <p>Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 col-xl-4 filterDiv design other">
+                        <div class="yellow-overlay">
+                            <div class="sub-overlay">
+                                <h1>BLOCK TITLE</h1>
+                                <p>Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-row row">
+                    <div class="col-sm-12 col-lg-4 col-xl-4 filterDiv design">
+                        <div class="yellow-overlay">
+                            <div class="sub-overlay">
+                                <h1>BLOCK TITLE</h1>
+                                <p>Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 col-xl-4 filterDiv dev other">
+                        <div class="yellow-overlay">
+                        <div class="sub-overlay">
+                                <h1>BLOCK TITLE</h1>
+                                <p>Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 col-xl-4 filterDiv design">
+                        <div class="yellow-overlay">
+                            <div class="sub-overlay">
+                                <h1>BLOCK TITLE</h1>
+                                <p>Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end porfolio -->
+    
+    <!-- about us -->
+    <div id="about-us">
+        <!-- about us header -->
+        <div class="about-us-header">
+            <h1 class="h-title">HERE'S WHAT WE DO</h1>
+            <p class="p-content">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div class="yellow-line"> </div>
+        </div>
+        
+        <!-- about us content -->
+        <div class="about-us-content container">
+            <div class="row">
+                <div class="about-item col-sm-12 col-lg-4 col-xl-4">
+                    <i class="fa fa-pencil"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+                <div class="about-item col-sm-12 col-lg-4 col-xl-4">
+                    <i class="fa fa-eye"></i>
+                    <h3>Dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+                <div class="about-item col-sm-12 col-lg-4 col-xl-4">
+                    <i class="fa fa-photo"></i>
+                    <h3>Suspendisse vari</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-item col-sm-12 col-lg-4 col-xl-4">
+                    <i class="fa fa-file-text"></i>
+                    <h3>Varius enimin</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+                <div class="about-item col-sm-12 col-lg-4 col-xl-4">
+                    <i class="fa fa-calendar-check-o"></i>
+                    <h3>Consectetur elit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+                <div class="about-item col-sm-12 col-lg-4 col-xl-4">
+                    <i class="fa fa-address-card-o"></i>
+                    <h3>Elementum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+        </div> <!-- end about us content -->
+        
+        <div class="container-fluid about-page">
+            <div>
+                <h1 class="h-title">JOIN OUR TEAM</h1>
+                <p class="p-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+        </div>
+        <div class="container-fluid about-contact">
+            <div class="row about-row">
+                <div class="about-contact-item col-sm-12 col-lg-9 col-xl-9">
+                    <p>Join 150,000 companies around the world that lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+                </div>
+                <div class="about-contact-item col-sm-12 col-lg-3 col-xl-3">
+                    <button class="btn btn-light">GET STARTED NOW</button>
+                </div>
+            </div>
+        </div>
+        
+    
+    </div>
+    
+<!-- js -->
+    <script>
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("btn-container");
+var btns = btnContainer.getElementsByClassName("btn-portfolio");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active-btn");
+    current[0].className = current[0].className.replace(" active-btn", "");
+    this.className += " active-btn";
+  });
+}
+    </script>
+</body>
+
+</html>
